@@ -1,0 +1,6 @@
+framework module Pods_SlientPushHelper {
+  umbrella header "Pods-SlientPushHelper-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -9,5 +9,7 @@
 #import "SlientPushHelper.h"
 
 @implementation SlientPushHelper
-
+-(void)add{
+    NSNotification *
+}
 @end

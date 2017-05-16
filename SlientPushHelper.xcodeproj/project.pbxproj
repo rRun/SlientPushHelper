@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F623AEC43D265D0529532FC /* Pods_SlientPushHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372A797A0861AE7587981FA6 /* Pods_SlientPushHelper.framework */; };
 		EA009DF51EC1A608001D1906 /* SlientPushHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EA009DF41EC1A608001D1906 /* SlientPushHelper.m */; };
 		EA009DF61EC1A608001D1906 /* SlientPushHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA009DF31EC1A608001D1906 /* SlientPushHelper.h */; };
 		EA009DFE1EC2AF55001D1906 /* SlientPushSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = EA009DFD1EC2AF55001D1906 /* SlientPushSettings.m */; };
@@ -26,6 +27,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		372A797A0861AE7587981FA6 /* Pods_SlientPushHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlientPushHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E72C746CC3788D6E3E9D644 /* Pods-SlientPushHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlientPushHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlientPushHelper/Pods-SlientPushHelper.release.xcconfig"; sourceTree = "<group>"; };
+		C113A9B68EA9DD59B354EA1C /* Pods-SlientPushHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlientPushHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlientPushHelper/Pods-SlientPushHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		EA009DF01EC1A608001D1906 /* libSlientPushHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSlientPushHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA009DF31EC1A608001D1906 /* SlientPushHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlientPushHelper.h; sourceTree = "<group>"; };
 		EA009DF41EC1A608001D1906 /* SlientPushHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlientPushHelper.m; sourceTree = "<group>"; };
@@ -38,17 +42,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F623AEC43D265D0529532FC /* Pods_SlientPushHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55C2D3048DEE8DA00D1B7F60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C113A9B68EA9DD59B354EA1C /* Pods-SlientPushHelper.debug.xcconfig */,
+				3E72C746CC3788D6E3E9D644 /* Pods-SlientPushHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A6B90A67D8ACE5701190B95B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				372A797A0861AE7587981FA6 /* Pods_SlientPushHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA009DE71EC1A608001D1906 = {
 			isa = PBXGroup;
 			children = (
 				EA009DF21EC1A608001D1906 /* SlientPushHelper */,
 				EA009DF11EC1A608001D1906 /* Products */,
+				55C2D3048DEE8DA00D1B7F60 /* Pods */,
+				A6B90A67D8ACE5701190B95B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA009DF91EC1A608001D1906 /* Build configuration list for PBXNativeTarget "SlientPushHelper" */;
 			buildPhases = (
+				5EC11DA418E4D4DCE6F03155 /* [CP] Check Pods Manifest.lock */,
 				EA009DEC1EC1A608001D1906 /* Sources */,
 				EA009DED1EC1A608001D1906 /* Frameworks */,
 				EA009DEE1EC1A608001D1906 /* CopyFiles */,
+				AAA907ED42573C553C914533 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +149,39 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EC11DA418E4D4DCE6F03155 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AAA907ED42573C553C914533 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlientPushHelper/Pods-SlientPushHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA009DEC1EC1A608001D1906 /* Sources */ = {
@@ -229,9 +288,10 @@
 		};
 		EA009DFA1EC1A608001D1906 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C113A9B68EA9DD59B354EA1C /* Pods-SlientPushHelper.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 63DD5UWBGN;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -239,9 +299,10 @@
 		};
 		EA009DFB1EC1A608001D1906 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E72C746CC3788D6E3E9D644 /* Pods-SlientPushHelper.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 63DD5UWBGN;
-				OTHER_LDFLAGS = "-ObjC";
+                OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

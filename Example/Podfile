@@ -1,0 +1,11 @@
+#use_frameworks!
+
+target 'SlientPushHelper_Example' do
+  pod 'SlientPushHelper', :path => '../'
+  pod 'JPush', '~> 2.1.7'
+  
+  target 'SlientPushHelper_Tests' do
+    inherit! :search_paths
+
+  end
+end

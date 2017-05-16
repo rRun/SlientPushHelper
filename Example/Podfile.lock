@@ -1,0 +1,19 @@
+PODS:
+  - JPush (2.1.7)
+  - SlientPushHelper (0.1.0)
+
+DEPENDENCIES:
+  - JPush (~> 2.1.7)
+  - SlientPushHelper (from `../`)
+
+EXTERNAL SOURCES:
+  SlientPushHelper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JPush: d37320eba856bf91f2c73989df4abf1e8846db2c
+  SlientPushHelper: 204bae66741cde49eda5193f5c58e4fb2113ce5b
+
+PODFILE CHECKSUM: a474995a85808f49da5f02ba612e8530d5dddbe1
+
+COCOAPODS: 1.0.1

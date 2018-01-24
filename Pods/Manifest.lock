@@ -1,15 +1,35 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - CocoaAsyncSocket (7.6.0)
   - JCore (1.1.2)
   - JPush (3.0.3):
     - JCore (~> 1.1.1)
 
 DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - CocoaAsyncSocket (~> 7.6.0)
   - JPush (~> 3.0.3)
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CocoaAsyncSocket: b9d5589f07baf9de8f34cc25abd4fcba28f13805
   JCore: 9e9bd280a38090d66aca0a7547581cd29804c6eb
   JPush: 8ea7c5bee363191cb5214f5d34ae11e1c5494722
 
-PODFILE CHECKSUM: 6e533d3b5f5f2926f4a14fb0419226f977171de9
+PODFILE CHECKSUM: d06993a0eead06c4bd5b9997878bc830873837f3
 
 COCOAPODS: 1.1.1

@@ -1,0 +1,22 @@
+{
+  "name": "SlientPushHelper",
+  "version": "0.1.0",
+  "summary": "静默推送帮助类",
+  "description": "TODO:远程静默推送，模拟QQ,TENGCENT等,需要后台支持",
+  "homepage": "https://github.com/rRun/SlientPushHelper",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hexy": "hexy@cdfortis.com"
+  },
+  "source": {
+    "git": "https://github.com/rRun/SlientPushHelper.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source_files": "SlientPushHelper/Classes/**/*"
+}
